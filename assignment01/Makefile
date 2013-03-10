@@ -14,8 +14,8 @@ all: build clean
 clean:
 	@${TOUCH} ${FILE}.pdf
 	@${MV} ${FILE}.pdf ${FILE}.org.pdf
-	@${MAKE} -f latex-makefile clean
+	@${MAKE} -f ../latex-makefile clean
 	@${MV} ${FILE}.org.pdf ${FILE}.pdf
 
 build: 
-	@${MAKE} -f latex-makefile ${FILE}
+	@${MAKE} -f ../latex-makefile ${FILE}
