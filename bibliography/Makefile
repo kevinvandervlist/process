@@ -31,5 +31,4 @@ build: literature
 	@${MAKE} -f ../latex-makefile ${FILE}
 
 literature: $(wildcard literature/*.tex)
-	@${ECHO} "\chapter{Literature study}" > _literature_study.tex
-	@${LS} literature/*.tex | awk '{printf "\\input{%s}\n", $$1}' >> _literature_study.tex
+	@${LS} literature/*.tex | awk '{printf "\\input{%s}\n", $$1}' > _literature_study.tex
