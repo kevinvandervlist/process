@@ -1,0 +1,98 @@
+\documentclass[]{uva-bachelor-thesis}
+
+% Define this when starting to use the template:
+\def\course{Software Process}
+\def\assignment{Assignment 2: Scrum and XP}
+\def\group{Kevin van der Vlist}
+\def\duedate{\today}
+% Define your team members hear, each one on a row:
+\def\teamtable{\begin{tabular}{ll}
+10338152 & kevin.vandervlist@student.uva.nl \\
+\end{tabular}}
+% The document is now set correctly
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{eurosym}
+
+\usepackage{fancyhdr}
+\usepackage[colorlinks, linkcolor=black, urlcolor=black, citecolor=black]{hyperref}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+
+% Chapter and page storage
+\def \CurrChapter {}
+\def \LastSection {}
+\def \CurrSection {}
+\newcounter{CurrPage}
+\setcounter{CurrPage}{0}
+
+\pagestyle{fancy} 
+\renewcommand{\markboth}[2]{\def \CurrChapter {#1}} % For use with \tableofcontents
+\renewcommand{\chaptermark}[1]{\def \CurrChapter {#1} \def \CurrSection {}}
+\renewcommand{\sectionmark}[1]{ %
+  \ifthenelse{ %
+    \equal{\thepage}{\value{CurrPage}} %
+  } %
+  {\def \CurrSection {: #1}} %
+  {\let \LastSection \CurrSection \def \CurrSection {: #1} \setcounter{CurrPage}{\value{page}}} %
+}
+
+% Headers and footers
+\renewcommand{\footrulewidth}{0.5pt}
+
+\fancyhf{}
+\fancyfoot[LE,RO]{\textit{\thepage}}
+\fancyfoot[RE,LO]{\textit{\group}}
+\fancyhead[RE,LO]{\textit{}}
+\fancyhead[LE,RO]{ %
+  \ifthenelse{ %
+    \equal{\thepage}{\value{CurrPage}} %
+  } %
+  {\textit{\nouppercase{\CurrChapter\LastSection}}} %
+  {\let \LastSection \CurrSection \textit{\nouppercase{\CurrChapter\LastSection}}} %
+}
+
+\fancypagestyle{plain}{ %
+\fancyhf{} %
+\fancyfoot[LE,RO]{\textit{\thepage}} %
+\fancyfoot[RE,LO]{\textit{\group}} %
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+}
+
+\setlength{\parskip}{.5em}
+
+\title{\course}
+\subtitle{\assignment}
+\author{\group}
+\team{\teamtable}
+
+\begin{document}
+\maketitle
+
+\setlength{\parskip}{0px}
+\tableofcontents
+\setlength{\parskip}{.5em}
+
+\clearpage
+\chapter{Scrum and XP}
+Make an overview of practices of scrum and xp and list the intent of the pratice
+
+\section{Essay}
+Write a small essay (1 1/2 page max) to answer these questions:
+\begin{itemize}
+  \item Under what conditions will agile methods like scrum or xp work and under what conditions will they not suffice 
+\item To what extent would it have solved the problems in the failed project you studied
+\item What are the shortcomings / limitations / trade offs of the agile methods
+\end{itemize}
+
+
+
+\bibliographystyle{abbrv}
+\bibliography{references}
+\chaptermark{Bibliography}
+
+\end{document}
