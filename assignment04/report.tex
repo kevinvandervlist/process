@@ -1,0 +1,382 @@
+\documentclass[]{uva-bachelor-thesis}
+
+% Define this when starting to use the template:
+\def\course{Software Process}
+\def\assignment{Assignment 3: }
+\def\group{Kevin van der Vlist}
+\def\duedate{\today}
+% Define your team members hear, each one on a row:
+\def\teamtable{\begin{tabular}{ll}
+10338152 & kevin.vandervlist@student.uva.nl \\
+\end{tabular}}
+% The document is now set correctly
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{eurosym}
+
+\usepackage{fancyhdr}
+\usepackage[colorlinks, linkcolor=black, urlcolor=black, citecolor=black]{hyperref}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+
+% Chapter and page storage
+\def \CurrChapter {}
+\def \LastSection {}
+\def \CurrSection {}
+\newcounter{CurrPage}
+\setcounter{CurrPage}{0}
+
+\pagestyle{fancy} 
+\renewcommand{\markboth}[2]{\def \CurrChapter {#1}} % For use with \tableofcontents
+\renewcommand{\chaptermark}[1]{\def \CurrChapter {#1} \def \CurrSection {}}
+\renewcommand{\sectionmark}[1]{ %
+  \ifthenelse{ %
+    \equal{\thepage}{\value{CurrPage}} %
+  } %
+  {\def \CurrSection {: #1}} %
+  {\let \LastSection \CurrSection \def \CurrSection {: #1} \setcounter{CurrPage}{\value{page}}} %
+}
+
+% Headers and footers
+\renewcommand{\footrulewidth}{0.5pt}
+
+\fancyhf{}
+\fancyfoot[LE,RO]{\textit{\thepage}}
+\fancyfoot[RE,LO]{\textit{\group}}
+\fancyhead[RE,LO]{\textit{}}
+\fancyhead[LE,RO]{ %
+  \ifthenelse{ %
+    \equal{\thepage}{\value{CurrPage}} %
+  } %
+  {\textit{\nouppercase{\CurrChapter\LastSection}}} %
+  {\let \LastSection \CurrSection \textit{\nouppercase{\CurrChapter\LastSection}}} %
+}
+
+\fancypagestyle{plain}{ %
+\fancyhf{} %
+\fancyfoot[LE,RO]{\textit{\thepage}} %
+\fancyfoot[RE,LO]{\textit{\group}} %
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+}
+
+\setlength{\parskip}{.5em}
+
+\title{\course}
+\subtitle{\assignment}
+\author{\group}
+\team{\teamtable}
+
+\begin{document}
+\maketitle
+
+\setlength{\parskip}{0px}
+\tableofcontents
+\setlength{\parskip}{.5em}
+
+\clearpage
+
+\chapter{Control in an age of empowerment \cite{simons1995control}}
+% View of org + how to improve effectiveness
+% * What are contributions?
+
+\section{Contribution}
+This article is about the way managers can empower their employees to create valuable output, ideas that have business value.
+In order to maximise these valuable assets, a certain level of freedom must be given to employees. 
+The trade-off between can be a risk, because the freedom can be abused by individuals, damaging the organisation they are representing.
+
+The author describes four ``Levers of Control'' which guide managers in providing freedom, while putting clear borders on around that freedom.
+This is done by making sure the boundary of the unacceptable is clear.
+
+Those four levers are:
+\begin{itemize}
+  \item Beliefs systems - Be very clear about your core objectives.
+  \item Boundary systems - Provide clear boundaries on what is \emph{not} acceptable
+  \item Diagnostic control systems - Make challenges, high goals which motivate employee.
+  \item Interactive control systems - Interact with employees, encourage personal growth and encourage the pushing of boundaries.
+\end{itemize}
+
+\section{Relation to Betuwelijn}
+% * How was coordination in failed cased? 
+% * How did this evolve? 
+% * How is this related to failure?
+% * How to improve on that?
+The failed case, the \emph{Betuwelijn}, was an innovative and technically challenging project.
+No real experience had been gathered, so a lot of the projects challenges were new.
+In order to complete the project, it would be beneficial to give some freedom to the partners of the project.
+An example is the \emph{NS}, which was used to prepare the project because they had experience with managing rail-infrastructural projects.
+Another example is that at certain phases of the project, only one part-timer in a governmental body has been \documentclass[]{uva-bachelor-thesis}
+
+% Define this when starting to use the template:
+\def\course{Software Process}
+\def\assignment{Assignment 3: }
+\def\group{Kevin van der Vlist}
+\def\duedate{\today}
+% Define your team members hear, each one on a row:
+\def\teamtable{\begin{tabular}{ll}
+10338152 & kevin.vandervlist@student.uva.nl \\
+\end{tabular}}
+% The document is now set correctly
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{eurosym}
+
+\usepackage{fancyhdr}
+\usepackage[colorlinks, linkcolor=black, urlcolor=black, citecolor=black]{hyperref}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+
+% Chapter and page storage
+\def \CurrChapter {}
+\def \LastSection {}
+\def \CurrSection {}
+\newcounter{CurrPage}
+\setcounter{CurrPage}{0}
+
+\pagestyle{fancy} 
+\renewcommand{\markboth}[2]{\def \CurrChapter {#1}} % For use with \tableofcontents
+\renewcommand{\chaptermark}[1]{\def \CurrChapter {#1} \def \CurrSection {}}
+\renewcommand{\sectionmark}[1]{ %
+  \ifthenelse{ %
+    \equal{\thepage}{\value{CurrPage}} %
+  } %
+  {\def \CurrSection {: #1}} %
+  {\let \LastSection \CurrSection \def \CurrSection {: #1} \setcounter{CurrPage}{\value{page}}} %
+}
+
+% Headers and footers
+\renewcommand{\footrulewidth}{0.5pt}
+
+\fancyhf{}
+\fancyfoot[LE,RO]{\textit{\thepage}}
+\fancyfoot[RE,LO]{\textit{\group}}
+\fancyhead[RE,LO]{\textit{}}
+\fancyhead[LE,RO]{ %
+  \ifthenelse{ %
+    \equal{\thepage}{\value{CurrPage}} %
+  } %
+  {\textit{\nouppercase{\CurrChapter\LastSection}}} %
+  {\let \LastSection \CurrSection \textit{\nouppercase{\CurrChapter\LastSection}}} %
+}
+
+\fancypagestyle{plain}{ %
+\fancyhf{} %
+\fancyfoot[LE,RO]{\textit{\thepage}} %
+\fancyfoot[RE,LO]{\textit{\group}} %
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+}
+
+\setlength{\parskip}{.5em}
+
+\title{\course}
+\subtitle{\assignment}
+\author{\group}
+\team{\teamtable}
+
+\begin{document}
+\maketitle
+
+\setlength{\parskip}{0px}
+\tableofcontents
+\setlength{\parskip}{.5em}
+
+\clearpage
+
+\chapter{Control in an age of empowerment \cite{simons1995control}}
+% View of org + how to improve effectiveness
+% * What are contributions?
+
+\section{Contribution}
+This article is about the way managers can empower their employees to create valuable output, ideas that have business value.
+In order to maximise these valuable assets, a certain level of freedom must be given to employees. 
+The trade-off between can be a risk, because the freedom can be abused by individuals, damaging the organisation they are representing.
+
+The author describes four ``Levers of Control'' which guide managers in providing freedom, while putting clear borders on around that freedom.
+This is done by making sure the boundary of the unacceptable is clear.
+
+Those four levers are:
+\begin{itemize}
+  \item Beliefs systems - Be very clear about your core objectives.
+  \item Boundary systems - Provide clear boundaries on what is \emph{not} acceptable
+  \item Diagnostic control systems - Make challenges, high goals which motivate employee.
+  \item Interactive control systems - Interact with employees, encourage personal growth and encourage the pushing of boundaries.
+\end{itemize}
+
+\section{Relation to Betuwelijn}
+% * How was coordination in failed cased? 
+% * How did this evolve? 
+% * How is this related to failure?
+% * How to improve on that?
+The failed case, the \emph{Betuwelijn}, was an innovative and technically challenging project.
+No real experience had been gathered, so a lot of the projects challenges were new.
+In order to complete the project, it would be beneficial to give some freedom to the partners of the project.
+An example is the \emph{NS}, which was used to prepare the project because they had experience with managing rail-infrastructural projects.
+Another example is that at certain phases of the project, only one part-timer in a governmental body has been \documentclass[]{uva-bachelor-thesis}
+
+% Define this when starting to use the template:
+\def\course{Software Process}
+\def\assignment{Assignment 3: }
+\def\group{Kevin van der Vlist}
+\def\duedate{\today}
+% Define your team members hear, each one on a row:
+\def\teamtable{\begin{tabular}{ll}
+10338152 & kevin.vandervlist@student.uva.nl \\
+\end{tabular}}
+% The document is now set correctly
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{eurosym}
+
+\usepackage{fancyhdr}
+\usepackage[colorlinks, linkcolor=black, urlcolor=black, citecolor=black]{hyperref}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+
+% Chapter and page storage
+\def \CurrChapter {}
+\def \LastSection {}
+\def \CurrSection {}
+\newcounter{CurrPage}
+\setcounter{CurrPage}{0}
+
+\pagestyle{fancy} 
+\renewcommand{\markboth}[2]{\def \CurrChapter {#1}} % For use with \tableofcontents
+\renewcommand{\chaptermark}[1]{\def \CurrChapter {#1} \def \CurrSection {}}
+\renewcommand{\sectionmark}[1]{ %
+  \ifthenelse{ %
+    \equal{\thepage}{\value{CurrPage}} %
+  } %
+  {\def \CurrSection {: #1}} %
+  {\let \LastSection \CurrSection \def \CurrSection {: #1} \setcounter{CurrPage}{\value{page}}} %
+}
+
+% Headers and footers
+\renewcommand{\footrulewidth}{0.5pt}
+
+\fancyhf{}
+\fancyfoot[LE,RO]{\textit{\thepage}}
+\fancyfoot[RE,LO]{\textit{\group}}
+\fancyhead[RE,LO]{\textit{}}
+\fancyhead[LE,RO]{ %
+  \ifthenelse{ %
+    \equal{\thepage}{\value{CurrPage}} %
+  } %
+  {\textit{\nouppercase{\CurrChapter\LastSection}}} %
+  {\let \LastSection \CurrSection \textit{\nouppercase{\CurrChapter\LastSection}}} %
+}
+
+\fancypagestyle{plain}{ %
+\fancyhf{} %
+\fancyfoot[LE,RO]{\textit{\thepage}} %
+\fancyfoot[RE,LO]{\textit{\group}} %
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+}
+
+\setlength{\parskip}{.5em}
+
+\title{\course}
+\subtitle{\assignment}
+\author{\group}
+\team{\teamtable}
+
+\begin{document}
+\maketitle
+
+\setlength{\parskip}{0px}
+\tableofcontents
+\setlength{\parskip}{.5em}
+
+\clearpage
+
+\chapter{Control in an age of empowerment \cite{simons1995control}}
+% View of org + how to improve effectiveness
+% * What are contributions?
+
+\section{Contribution}
+This article is about the way managers can empower their employees to create valuable output, ideas that have business value.
+In order to maximise these valuable assets, a certain level of freedom must be given to employees. 
+The trade-off between can be a risk, because the freedom can be abused by individuals, damaging the organisation they are representing.
+
+The author describes four ``Levers of Control'' which guide managers in providing freedom, while putting clear borders on around that freedom.
+This is done by making sure the boundary of the unacceptable is clear.
+
+Those four levers are:
+\begin{itemize}
+  \item Beliefs systems - Be very clear about your core objectives.
+  \item Boundary systems - Provide clear boundaries on what is \emph{not} acceptable
+  \item Diagnostic control systems - Make challenges, high goals which motivate employee.
+  \item Interactive control systems - Interact with employees, encourage personal growth and encourage the pushing of boundaries.
+\end{itemize}
+
+\section{Relation to Betuwelijn}
+% * How was coordination in failed cased? 
+% * How did this evolve? 
+% * How is this related to failure?
+% * How to improve on that?
+The failed case, the \emph{Betuwelijn}, was an innovative and technically challenging project.
+No real experience had been gathered, so a lot of the projects challenges were new.
+In order to complete the project, it would be beneficial to give some freedom to the partners of the project.
+An example is the \emph{NS}, which was used to prepare the project because they had experience with managing rail-infrastructural projects.
+
+Another example is the way the Dutch House of Representatives (\emph{tweede kamer}) provided the different governmental bodies with assignments on what to do. 
+Each governmental body receives certain ``tasks'', and they basically are responsible for making sure they get their job done.
+
+In other words, each stakeholder of the project was working in its own belief system.
+The overarching governmental body, the \emph{tweede kamer}, had different core objectives then each of the underlying stakeholders. 
+Because of this, a conflict in objectives could sometimes be found, like ``What's best for the country'' vs. ``We want this railway project because of prestige''.
+
+In case of boundary systems it is even simpler. 
+In practice there were hardly any. 
+Every stakeholder could basically do as he pleases, just make sure the project will get there. 
+The best example of this is the budget growth, with almost 500\% of the original budget.
+
+A good lever has been the diagnostic control system. 
+The project was hugely challenging, so highly motivated employees were related to the project. 
+I think this is even strengthened by the visibility of the project. 
+If completed successfully it would be one enormous showcase.
+
+Lastly, the interactive control system has also been lacking. 
+Interaction between the different stakeholders was hard, and only happened when a direct dependency is found. 
+Basically, there is no way to make sure all those parties stay in the same line. 
+
+All of this is related to the failure. 
+Because communication, boundaries and belief system were different for each stakeholder, they will all develop their own ``subtype'' of the project. 
+I think they will get the idea that their way of doing it is correct, and all others are screwing up. 
+
+When the direction of such a huge project is not unified anymore, it will become hard to do right. 
+This was increased even more by the ever changing requirements and scope put down by the \emph{tweede kamer}. 
+At the end, none of the parties had a really thorough model of the project anymore I think.
+Each stakeholder will start to get the feeling he is the only one that's doing it right, after which his way of doing things will be put in stone ever more.
+
+An (in hindsight obvious) improvement would be to make sure all the levers of control are a) acknowledged by the leading stakeholder, the \emph{tweede kamer}, and b) utilised by them. 
+At this point, it is not very probable they were even aware of those. 
+It can at least not be identified by looking at the way the project was managed.
+
+But, this did not solely constitute to the failure of the project. 
+The biggest threats were, like explained in assignment one, the modified information that's used as a basis and the entanglement (Dutch: ``verstrikking'') of the upper echelons during the project.
+At a certain stage, it was just unthinkable to let the project fail, no matter what the cost.
+
+So, a number of improvements would have been made possible by using the described levers of control. 
+It would also increase the communication, raise awareness for a common goal and make sure the parties will collaborate more and better. 
+It can't be said that this will solve the issues of the project though. 
+
+The endeavour has been a new one, raising technical knowledge and moving boundaries on what could be done and what not. 
+This required experimentation every now and then, there were basically no real examples or guidelines on how to handle such a project specifically. 
+Hardships would still be expected, and the core reasons of failure were not really addressed by these levers of control, because the \emph{tweede kamer} (in view of the levers: the managers) itself has been the prime target to blame for what happened. 
+
+\bibliographystyle{abbrv}
+\bibliography{references}
+\chaptermark{Bibliography}
+
+\end{document}
