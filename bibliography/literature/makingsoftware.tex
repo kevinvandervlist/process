@@ -149,15 +149,38 @@ The chapter itself is an easy read, but contains terrific information.
 
 I highly recommend this chapter.
 
-\section{Chapter xx: }
+\section{Chapter 29: How Usable Are Your APIs?}
 \subsection{Notes}
 % Relevant notes
+As the central topic, API design is chosen in this chapter. 
+API design is important, because it is used a lot of times, based on the assumption of saving time. 
+When an API is hard to use, this is not the case, and can even result in the opposite situation. 
+In general, developers don't tend to blame API design, but their own lack of understanding (``I'm not sufficient enough, give me some time'').
+
+Designing a good API is important, and doing it correctly is hard. 
+A first approach to discover a sort of general model in an API domain is done by a ``card stacking''\footnote{Grouping cards with functionality, trying to discover model patterns} experiment.
+This resulted in total chaos, but provided the insight that everybody uses API in their own way. 
+There is hardly a common domain from API usability perspective
+
+A second study was focused on the level of abstractness used by the API in question\footnote{VB.Net}.
+The main findings of this were not that an API was hard to use, and therefore might require more code examples as one might suspect, but that the level of abstractness might be too high.
+If the domain of an API does not match the domain of the users, cognitive load is high.
+
+By using the \emph{Cognitive Dimensions Framework}, mappings were made to \emph{personas}, styles of programmers identified as the audience for the API in question.
+As it turned out, each persona had its unique characteristics in the framework, and the API did not address this.
+
+The API was adapted by adding various ``layers'' of basically increasing abstraction. 
+This resulted in an API, which all of their target audience could use, while still retaining an enormous amount of flexibility. Not the \emph{design} of the architecture, but the \emph{user experience} is the most important part of API design.
 
 \subsection{Questions}
 % Relevant questions
 \begin{itemize}
-  \item Foo
+  \item What is good API design?
+  \item How to evaluate API design?
 \end{itemize}
 
 \subsection{Review}
 % Optional: review why fellow students have to read it
+Read this chapter if you are interested in making your APIs usable for other developers. 
+It contains a lot of pointers and a short introduction towards evaluation of API usage of your targeted developers. 
+Other then that it is an easy read, and makes you see programming from another perspective (programming for \emph{other developers} instead of \emph{users}.
