@@ -1,0 +1,123 @@
+\documentclass[]{uva-bachelor-thesis}
+
+% Define this when starting to use the template:
+\def\course{Software Process}
+\def\assignment{Assignment 5: Making Software Essays}
+\def\group{Kevin van der Vlist}
+\def\duedate{\today}
+% Define your team members hear, each one on a row:
+\def\teamtable{\begin{tabular}{ll}
+10338152 & kevin.vandervlist@student.uva.nl \\
+\end{tabular}}
+% The document is now set correctly
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{eurosym}
+
+\usepackage{fancyhdr}
+\usepackage[colorlinks, linkcolor=black, urlcolor=black, citecolor=black]{hyperref}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+
+% Chapter and page storage
+\def \CurrChapter {}
+\def \LastSection {}
+\def \CurrSection {}
+\newcounter{CurrPage}
+\setcounter{CurrPage}{0}
+
+\pagestyle{fancy} 
+\renewcommand{\markboth}[2]{\def \CurrChapter {#1}} % For use with \tableofcontents
+\renewcommand{\chaptermark}[1]{\def \CurrChapter {#1} \def \CurrSection {}}
+\renewcommand{\sectionmark}[1]{ %
+  \ifthenelse{ %
+    \equal{\thepage}{\value{CurrPage}} %
+  } %
+  {\def \CurrSection {: #1}} %
+  {\let \LastSection \CurrSection \def \CurrSection {: #1} \setcounter{CurrPage}{\value{page}}} %
+}
+
+% Headers and footers
+\renewcommand{\footrulewidth}{0.5pt}
+
+\fancyhf{}
+\fancyfoot[LE,RO]{\textit{\thepage}}
+\fancyfoot[RE,LO]{\textit{\group}}
+\fancyhead[RE,LO]{\textit{}}
+\fancyhead[LE,RO]{ %
+  \ifthenelse{ %
+    \equal{\thepage}{\value{CurrPage}} %
+  } %
+  {\textit{\nouppercase{\CurrChapter\LastSection}}} %
+  {\let \LastSection \CurrSection \textit{\nouppercase{\CurrChapter\LastSection}}} %
+}
+
+\fancypagestyle{plain}{ %
+\fancyhf{} %
+\fancyfoot[LE,RO]{\textit{\thepage}} %
+\fancyfoot[RE,LO]{\textit{\group}} %
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+}
+
+\setlength{\parskip}{.5em}
+
+\title{\course}
+\subtitle{\assignment}
+\author{\group}
+\team{\teamtable}
+
+\begin{document}
+\maketitle
+
+\setlength{\parskip}{0px}
+\tableofcontents
+\setlength{\parskip}{.5em}
+
+\clearpage
+
+\chapter{Chapter 07: Why Is It So Hard to Learn to Program?}
+% How can you use this knowledge to understand project success and failure?
+Apparently a large difference between natural language and ``foreign'' program language. 
+A lot of people fail CS1, but when forced to focus on purely core concepts students show quality. 
+Several research groups have tried other approaches, like visual programming (increased cognitive load) and ``practical, media oriented'' (worked very well. Significantly highers passing ratings of courses).
+No definitive proof, but media computation tends to provide enough context so students are able to ``get'' core programming concepts easier. 
+
+If the content of this chapter will be generalised, one might hypothesise that this also holds for general new domains. 
+A project that needs to accomplish something in a certain domain first needs to be sure that every intricacy will be conquered.
+Everything needs to be captured in the ubiquitous language and (mental) models a project team is using.
+
+In cases of project failure, a lot of things can go wrong. 
+One example is the case where most of the domain is new (like with the Betuwelijn). 
+Challenges that are part of a project need to be analysed and a solution for completion needs to be developed. 
+
+In larger projects there are a lot of people working relatively ``far'' from the real problem. 
+This automatically introduces a higher level of abstraction and more distance from the actual situation. 
+If the situation is not under control (because it's new, and not routine) this might introduce problems, and the same problems from the chapter can start to occur. 
+
+A way to prevent the problem could be to create structured guidelines for new situations.
+This could force an organisation to keep control of their ``abstractionness''. 
+The second thing that needs to be done is making sure \emph{different} approaches will be taken to analyse a problem which is new. 
+This forces to approach the problem from different angles, increasing the chances of forming a coherent model.
+If this is applied over a period of time, a generic and improved approach might be formalised to take the lessons learned into account.
+
+\chapter{Chapter 15: Quality Wars: Open Source Versus Proprietary Software}
+% How can you use this knowledge to understand project success and failure?
+
+\chapter{Chapter 16: Code Talkers}
+% How can you use this knowledge to understand project success and failure?
+
+\chapter{Chapter 24: The Art of Collecting Bug Reports}
+% How can you use this knowledge to understand project success and failure?
+
+\chapter{Chapter 29: How Usable Are Your APIs?}
+% How can you use this knowledge to understand project success and failure?
+
+\bibliographystyle{abbrv}
+\bibliography{references}
+\chaptermark{Bibliography}
+
+\end{document}
