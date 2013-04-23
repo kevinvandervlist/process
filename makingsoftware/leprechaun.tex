@@ -1,15 +1,16 @@
 \chapter{Leprechauns in collecting bug reports}
-One of the chapters in the Making Software is called ``The Art of Collecting Bug Reports'' \cite{makingsoftware}.
-The core subject of this chapter is what bug reports are captured, and what information they contain.
-At the beginning of the chapter, two bug reports are presented, found in the bug database of the Eclipse\footnote{\url{http://www.eclipse.org/}}. 
-One of them is shows a perfectly written report, including a minimal test case needed to reproduce the bug, while the other is not even a bug report.
-It is more a kind of help request. 
+One of the chapters in the Making Software book \cite{makingsoftware} is called ``The Art of Collecting Bug Reports''.
+The core subject of this chapter is what kind of bug reports are captured, and what information they contain.
+At the beginning of the chapter, two bug reports are presented, found in the bug database of the Eclipse. 
+The first shows a perfectly written report, including a minimal test case needed to reproduce the bug.
+The other is not even a bug report, but more a kind of help request. 
 
-The authors now conclude there is \emph{definitely} a difference in the quality of bug reports, solely based on these two examples.
+The authors now conclude there is \emph{definitely} a difference in the quality of bug reports, solely based on these two given examples.
+They suggest a lot of bug reports have a low quality.
 When verifying the claim, I had a look at the Eclipse bug database myself. 
 While querying for a list of invalid bugs\footnote{\url{https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&resolution=INVALID}} a huge amount of bugs was returned.
-Only this query already returns at least 10000 bugs.
-This claim holds, but could have been supported more thoroughly.
+Only this query alone returns at least 10000 bugs.
+The stated claim therefore holds, but it could have been supported more thoroughly.
 
 \section{What makes a good bug report}
 The chapter then continues to explain the contents of a good bug report. 
@@ -24,7 +25,7 @@ By only asking experienced developers within the project, important clues like t
 
 Another important assumption regarding the quality of bug reports is that business developers have the same needs as those in open source projects.
 However, developers working in an open source project experience different environmental factors then their commercial counterparts. 
-The first work for a community backing company, or even as a volunteer, while the latter are employed, and do it for financial compensation. 
+The first work for a community backing company, or even as a volunteer, while the latter are employed, and do their work forfin financial compensation. 
 They commercial developers also work with business goals, and might prioritise bugs differently based on managerial influence (e.g. being able to sell a product).
 
 As for the bug reporters, some interesting remarks can be made as well. 
@@ -39,25 +40,25 @@ This has a huge effect on the research, because it colours the results.
 
 Of course bug reporters (whom are developers themselves) \emph{know} what they need in a bug report. 
 They are aware of the same knowledge, and routinely apply the same task (fixing a bug based on a report). 
-To make the discrepancy even worse, bug reporters of open source projects have totally different incentives to submit a bug report at all. 
+To make the discrepancy even worse, bug reporters of open source projects have totally different incentives to submit a bug report.
 The only people willing to submit a report will probably be tech-savy persons, which also colours the results.
 In a commercial setting, users \emph{have} to employ tools for their daily job, and coming across a bug basically prohibits them from working on a task. 
 In order to have it fixed, they can perhaps file a report, or send an email, but this will probably be seen as a necessity, not something they want to do. 
 
 As can be seen, this section raises more questions then it answers.
-I don't know the answers, so I can't answer the questions. 
-However, I do know that writing the results down in the way as done in the chapter is highly suggestive. 
-It indicates a clear mismatch, and therefore the birth of a leprechaun.
+I don't know the answers, so I can't provide answers. 
+However, I do know that writing the results down as done in the chapter is highly suggestive. 
+This is a clear mismatch between the source and the citation, and therefore the birth of a leprechaun.
 
 \section{Handling bug reports}
 A quote from the chapter is ``A very interesting observation is that developers do not suffer too much from bug duplicates, although earlier research considered this to be a problem'', where they cite a specific paper \cite{Anvik:2005:COB:1117696.1117704}.
 A closer look on the paper shows that the issue is not correctly identified.
 Having duplicates is identified as a problem, but on closer inspection having to \emph{manually identify} the bugs is the actual problem. 
-The paper says nothing about having duplicate bugs itself as being a problem. 
+The paper says nothing about having duplicate bugs itself as being an issue.
 
 Another interesting citation is ``and bug reports with many comments get fixed sooner \cite{Hooimeijer:2007:MBR:1321631.1321639}``.
 A look at the paper showed that comments indeed have an effect on the time it takes to fix bugs, but this effect is not linearly (as suggested in the quotation).
-The shorter the time between the bug report and the comments, the higher their effect is on the time it takes to fix it. 
+The shorter the time between the bug report and the comments, the higher their effect is on the time it takes to provide a fix. 
 The model in the paper has several intervals, leading up to a 4 day period after the opening of a bug report. 
 With each interval, the effect is becoming smaller, and after the four days there probably is no significant effect anymore.
 This is a different story then the one told in the chapter of making software.
