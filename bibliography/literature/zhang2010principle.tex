@@ -1,0 +1,33 @@
+\chapter{On the principle of design of resilient systems -- application to enterprise information systems \cite{zhang2010principle}}
+\section{Notes}
+% Relevant notes
+The paper is focused on the design of resilient systems and is split into three key parts.
+The first part is aimed at providing a conceptual model on what can be seen as resilience in a technical environment. 
+Influences on this view can be found in biology. 
+In short, a resilient system should be reliable and robust (not break down easily), sustainable and healing (being able to withstand wear, and regain control on partial breakdown) and fault tolerant, safe and dependable (deliver service while in presence of faults, provide a trustworthy service).
+
+The second part regards the design of mechanical projects, which results in five principles:
+\begin{itemize}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item[1] The more redundancy, the higher the resilience can be.
+  \item[2] A designated controller is needed to control redundancy management and learning (to allow spare components to take over new tasks).
+  \item[3] A sensor is needed to monitor temporally and spatially the performance, capacity utilisation and demand.
+  \item[4] Analyse potential vulnerabilities and predict threats.
+  \item[5] The system as a whole should have an independent controller (machine or human) which decides on component takeovers and other decisions.
+\end{itemize}
+
+The third part of the paper puts this in perspective of a software system.
+The given principles can be applied in a software environment, for example by providing a fail over possibility in case a subsystem fails. 
+One of the examples they give is ``if outlook fails, switch to webmail''.
+
+As for the 5th item, a software system can autonomously monitor its status, and decide on a fail over by itself.
+By applying all five principles, software systems should be able to become resilient pieces of work.
+
+\section{questions}
+% relevant questions
+\begin{itemize}
+  \item What can we learn from biology to come up with resilient technical systems.
+\end{itemize}
+
