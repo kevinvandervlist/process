@@ -26,4 +26,41 @@ In short: Resilient organisations should identify early warning signals for fail
 This in turn allows the organisation to handle strain and stress, gaining an edge over competitors who do not.
 
 \section{Lessons for Software Engineering}
-au
+The software engineering profession can learn a number of lessons regarding resilience in software projects.
+Our projects are notorious for failures, usually after spending lots of money over a long period of time. 
+
+On the one hand there are the projects in which management is unaware of the direction the project is going. 
+They think the project is under control, but this happens to be a false assumption when the first deliverable is presented to a customer. 
+Another common scenario is that a lot of people \emph{know} a project is heading towards a failure, but somehow nobody acts accordingly. 
+Deadlines fly past, budgets overrun and still nobody takes action.
+
+Such issues can be seen as the early warning signals of a project failure, something indicating the loss of control of the project. 
+In resilient organisations, people are trained to detect and then \emph{act} when these signals are discovered. 
+This allows for early detection of a project on the loose, which in turn allows for corrections so the project can be put back on track.
+
+Another strength is the power put with individuals. 
+In a resilient organisation, any employee can ``stop production'' when sees a defect which needs to be addressed. 
+In software engineering, this usually is not the case.
+
+However, combining this with the agile approach -- where the individuals team members have a lot of power -- can result in interesting scenarios. 
+For example, say a developer discovers a huge security risk in the codebase of the project.
+If time pressure is high, the project can be shipped with the security leak still in the code. 
+The priority of the team was at shipping, not fixing a leak which \emph{might} result in abuse.
+
+If a developer had the power to put the project release on hold for a small timespan, effort could be put into fixing the issue. 
+The project could then be pushed to the market a moment later, but without a leak wreaking potential havoc.
+
+The same could happen in normal scenarios. 
+If developers have the opportunity to pay of future loans on maintainability and security, the future of the product as well as the team are better of. 
+This shows an overlap with the feedback loop in organisations, where resilience is a kind of self enforcing loop.
+Over time, the team gets better because of both a higher flexibility and a better codebase.
+
+Another lesson learned from resilient organisations is that (managerial) information seeking pays off. 
+Translated to the software domain: investing time in what you \emph{need} to know will pay off.
+For example, think about finding the actual requirements of a project or investing time in creating an executable architecture to proof your linear scaling techniques are actually viable. 
+This reduces both the future risk and cost, while at the same time learning so future deviations of schedule and estimates in general will be easier and more on the spot.
+
+A different lesson learned is the value of redundancy \cite{zhang2010principle}.
+Making sure that crucial parts of both a project and a product are redundant allows you to not have a single point of failure. 
+As a result, your performance tends to be higher.
+
