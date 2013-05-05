@@ -1,12 +1,12 @@
 \chapter{Organisational Resilience and Software Engineering}
 % How to apply this knowledge for SE?
 \section{Resilience: An introduction}
-Resilience is a concept that is quite common in organisational theory. 
-There is no single definition, but several of them have been given in existing literature.
+Resilience is a concept that is quite common in organisational theory, especially in high reliability organisations (which can attract the best personnel available).
+There is no single definition for resilience, but several of them have been given in existing literature.
 Examples are ``the ability of the organisation to simply 'bounce back' from a 'distinctive, discontinuous event that creates vulnerability and requires an unusual response'{''} \cite{JCCM:JCCM558} and ``the ability to 'absorb' strain or change with a minimum of disruption'' \cite{JCCM:JCCM558}.
 
 Important is that the factors contributing to resilience can be developed, measured and managed.
-If this is note the case they are external factors, not under the control of an organisation. 
+If this is not the case they are external factors, not under the control of an organisation. 
 Common factors that can be used to improve resilience are managerial information seeking and continuity planning.
 Managerial information seeking is useful because it allows the management to make well-informed decisions, contributing to an organisation built on ``solid ground''.
 
@@ -27,14 +27,14 @@ This in turn allows the organisation to handle strain and stress, gaining an edg
 
 \section{Lessons for Software Engineering}
 The software engineering profession can learn a number of lessons regarding resilience in software projects.
-Our projects are notorious for failures, usually after spending lots of money over a long period of time. 
+Our projects are notorious for failures, usually after spending lots of money over a long period of time without taking early action. 
 
 On the one hand there are the projects in which management is unaware of the direction the project is going. 
-They think the project is under control, but this happens to be a false assumption when the first deliverable is presented to a customer. 
+They think the project is under control, but this happens to be a false assumption, discovered when the first deliverable is presented to a customer. 
 Another common scenario is that a lot of people \emph{know} a project is heading towards a failure, but somehow nobody acts accordingly. 
 Deadlines fly past, budgets overrun and still nobody takes action.
 
-Such issues can be seen as the early warning signals of a project failure, something indicating the loss of control of the project. 
+Such issues can be seen as the (early\footnote{Especially with short-term deadlines}) warning signals of a project failure, something indicating the loss of control of the project. 
 In resilient organisations, people are trained to detect and then \emph{act} when these signals are discovered. 
 This allows for early detection of a project on the loose, which in turn allows for corrections so the project can be put back on track.
 
@@ -60,7 +60,11 @@ Translated to the software domain: investing time in what you \emph{need} to kno
 For example, think about finding the actual requirements of a project or investing time in creating an executable architecture to proof your linear scaling techniques are actually viable. 
 This reduces both the future risk and cost, while at the same time learning so future deviations of schedule and estimates in general will be easier and more on the spot.
 
-A different lesson learned is the value of redundancy \cite{zhang2010principle}.
+A final lesson learned is the value of redundancy \cite{zhang2010principle}.
 Making sure that crucial parts of both a project and a product are redundant allows you to not have a single point of failure. 
 As a result, your performance tends to be higher.
 
+\section{Conclusion}
+A lot of effort is put into making sure that software projects won't fail.
+However, a number of improvements can still be learned from the topic of organisational resilience.
+In this essay I gave a number of them, providing insight in hopefully viable improvements. 
